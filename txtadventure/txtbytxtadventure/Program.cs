@@ -6,8 +6,8 @@ namespace newTXTBYTXTADVENTURE
     {
         
         private static int health;
-        public static Enemy enemy = new Enemy();
-        public static Player Player1 = new Player();
+        private static Enemy enemy = new Enemy();
+        private static Player Player1 = new Player();
 
         //Main was written by Nick Shorter
         public static void Main(string[] args)
@@ -16,7 +16,7 @@ namespace newTXTBYTXTADVENTURE
             string difficulty = " ";
             while (difficulty == " " || difficulty != "hard" || difficulty != "easy")
             {
-                Console.WriteLine("Do you Want a Hard and Easy Adventure -> ");
+                Console.Write("Do you Want a Hard and Easy Adventure -> ");
                 difficulty = Console.ReadLine().ToLower();
 
                 if (difficulty == "hard")
