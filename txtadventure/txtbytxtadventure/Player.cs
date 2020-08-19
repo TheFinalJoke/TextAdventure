@@ -10,17 +10,21 @@ namespace newTXTBYTXTADVENTURE
         private int counter;
         private int firstRoll;
 
+        private String type;
+
         public Player()
         {
             this.health = 0;
             this.counter = 0;
             this.firstRoll = 0;
+            this.type = " "; 
         }
-        public Player(int health, int counter, int firstRoll)
+        public Player(int health, int counter, int firstRoll, String type)
         {
             this.health = health;
             this.counter = counter;
             this.firstRoll = firstRoll;
+            this.type = type;
         }
 
         public void setHealth(int health)
@@ -47,6 +51,13 @@ namespace newTXTBYTXTADVENTURE
         {
             return firstRoll;
         }
+        public void setType(String type){
+            this.type = type;
+        }
+        public String getType() {
+            return type;
+        }
+
         public String toString()
         {
             return ("Your health is " + health);
